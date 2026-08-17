@@ -1,0 +1,1 @@
+My question is on inline element if its blocks or boxes are they aslo responsive that they can be updated to columns each separately or maybe they shrink?
