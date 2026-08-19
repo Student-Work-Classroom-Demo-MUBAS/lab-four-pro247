@@ -13,3 +13,5 @@ why was it taht after adding this <div class="container">
         <div class="item">Colored Item 4</div>
         <div class="item">Colored Item 5</div>
     </div> the first element was not item 5 in the column?
+
+    playing along with teh height for the tag for most popula as at first there was no height specifiactiona dn it was hiding all the context for the proffesional track
