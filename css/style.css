@@ -27,6 +27,14 @@
 
 }
 
+@media (min-width: 375px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
 /* TABLET — screens 600px and above */
 @media (min-width: 600px) {
     .grid {
@@ -98,4 +106,17 @@
     background: rgb(70, 109, 228);
     border: 1.5px solid #576cf3;
     transform: scale(1.05);
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    bottom: -12px;
+    background-color: #238e63;
+    color: aliceblue;
+    padding: 2px 0.75rem;
+    border-radius: 9px;
+    box-shadow: 0 2px 4px #5f72e9;
+    height: 20px;
+
 }
