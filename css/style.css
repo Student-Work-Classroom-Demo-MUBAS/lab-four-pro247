@@ -58,51 +58,44 @@
 
 }
 
-.container {
+/* pricing-table is the FLEX CONTAINER */
+.pricing-table {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    flex-wrap: nowrap;
-    gap: 1rem;
-    max-width: 700px;
-    column-gap: 1rem;
-
+    gap: 1.5rem;
+    align-items: stretch;
+    /* make all cards same height */
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-.item {
-    flex: 1 1 200px;
-    margin-bottom: 1rem;
-    break-inside: avoid;
-    border: 1px solid hsl(0, 44%, 6%);
+/* Each .plan is a FLEX ITEM */
+.plan {
+    flex: 1 1 280px;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 12px;
-
+    padding: 1.5rem;
+    margin-bottom: 1rem;
 
 }
 
-.item1 {
-    color: blueviolet;
-    background-color: rgb(165, 192, 192);
+/* Push the button to the bottom of each card */
+.btn {
+    margin-top: auto;
+
 }
 
-.item2 {
-    color: blue;
-    background-color: rgb(165, 167, 242);
-}
-
-.item3 {
-    color: rgb(143, 13, 45);
-    background-color: rgb(172, 190, 190);
-}
-
-.item4 {
-    color: rgb(255, 0, 200);
-    background-color: rgb(139, 171, 110);
-}
-
-.item5 {
-    color: rgb(128, 169, 34);
-    background-color: rgb(194, 35, 117);
+/* Highlighted middle plan */
+.plan.featured {
+    /* TODO: different background, scale up with transform: scale(1.05) */
+    position: relative;
+    background: rgb(70, 109, 228);
+    border: 1.5px solid #576cf3;
+    transform: scale(1.05);
 }
