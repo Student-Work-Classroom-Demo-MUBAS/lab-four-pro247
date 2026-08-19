@@ -1,3 +1,16 @@
+.navbar {
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 1000;
+    padding: 0.75rem 0;
+    align-items: center;
+}
+
 /* BASE STYLES — applies to ALL screens (mobile first) */
 .grid {
     display: block;
@@ -5,11 +18,13 @@
 }
 
 .card {
+    font-size: 18px;
     background: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 1.5rem;
     margin-bottom: 1rem;
+
 }
 
 /* TABLET — screens 600px and above */
@@ -28,4 +43,17 @@
         grid-template-columns: 1fr 1fr 1fr;
         /* 3 columns */
     }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        bottom: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 14px;
+    }
+
 }
