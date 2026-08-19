@@ -71,7 +71,7 @@
 }
 
 .item {
-    flex: 0 0 200px;
+    flex: 1 1 200px;
     margin-bottom: 1rem;
     break-inside: avoid;
 }
