@@ -1,14 +1,31 @@
-/* Float an image to the right of text — its original purpose */
-.article-img {
-    float: right;
-    width: 200px;
-    margin: 0 0 1rem 1.5rem;
-    /* space around the floated image */
+/* BASE STYLES — applies to ALL screens (mobile first) */
+.grid {
+    display: block;
+    /* single column on mobile */
 }
 
-/* clear: both stops elements from wrapping around floated elements */
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* TABLET — screens 600px and above */
+@media (min-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* 2 columns */
+        gap: 1.5rem;
+    }
+}
+
+/* DESKTOP — screens 900px and above */
+@media (min-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        /* 3 columns */
+    }
 }
