@@ -1,11 +1,14 @@
-.profile-pic {
-    /* Shifts the image to the left and triggers text-wrapping */
-    float: none;
+/* Float an image to the right of text — its original purpose */
+.article-img {
+    float: right;
+    width: 200px;
+    margin: 0 0 1rem 1.5rem;
+    /* space around the floated image */
+}
 
-    /* Setting a width keeps the image size predictable */
-    width: 150px;
-
-    /* Adds breathing room between the image and the wrapping text */
-    margin-right: 15px;
-    margin-bottom: 10px;
+/* clear: both stops elements from wrapping around floated elements */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
 }
