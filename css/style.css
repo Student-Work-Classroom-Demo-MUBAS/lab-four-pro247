@@ -1,0 +1,11 @@
+.profile-pic {
+    /* Shifts the image to the left and triggers text-wrapping */
+    float: none;
+
+    /* Setting a width keeps the image size predictable */
+    width: 150px;
+
+    /* Adds breathing room between the image and the wrapping text */
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
