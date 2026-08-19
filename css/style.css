@@ -58,57 +58,20 @@
 
 }
 
-/* ── FLEX CONTAINER PROPERTIES ── */
 .container {
     display: flex;
-    /* activates Flexbox */
-    /* Main axis direction */
     flex-direction: row;
-    /* default: left to right */
-    flex-direction: column;
-    /* top to bottom */
-    flex-direction: row-reverse;
-    /* right to left */
-    /* Alignment along the MAIN axis */
-    justify-content: flex-start;
-    /* default */
-    justify-content: flex-end;
-    /* push to end */
-    justify-content: center;
-    /* centre */
-    justify-content: space-between;
-    /* gaps between items */
-    justify-content: space-around;
-    /* gaps around items */
     justify-content: space-evenly;
-    /* equal gaps everywhere */
-    /* Alignment along the CROSS axis (perpendicular to main) */
-    align-items: stretch;
-    /* default: fill cross axis */
-    align-items: center;
-    /* centre vertically (if row) */
-    align-items: flex-start;
-    /* align to start of cross axis */
     align-items: flex-end;
-    /* align to end of cross axis */
-    /* What happens when items overflow the row */
     flex-wrap: nowrap;
-    /* default: items shrink to fit */
-    flex-wrap: wrap;
-    /* items wrap to next line */
     gap: 1rem;
-    /* space between flex items */
+    max-width: 700px;
+    column-gap: 1rem;
+
 }
 
-/* ── FLEX ITEM PROPERTIES ── */
 .item {
-    /* flex: grow shrink basis */
-    /* grow: can item grow? (1=yes, 0=no) */
-    /* shrink: can item shrink? (1=yes, 0=no) */
-    /* basis: initial size before growing/shrinking */
-    flex: 1 1 200px;
-    /* grow, shrink, start at 200px wide */
-    flex: 1;
-    /* shorthand: can grow and shrink equally */
-    flex: 0
+    flex: 0 0 200px;
+    margin-bottom: 1rem;
+    break-inside: avoid;
 }
