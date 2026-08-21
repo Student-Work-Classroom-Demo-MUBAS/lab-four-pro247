@@ -38,5 +38,5 @@ Fix
 Set position: relative on .plan.featured to establish it as the positioning context, then position: absolute; top: -12px; right: -12px; on .badge.
 
 The concept i found the hardest to understand was: using the Devtools to navigate through the differnt screens sizes
-One question I still have : Can you adjust the transperacy for the objects background in css?
+One question I still have : My question is on inline element if its blocks or boxes are they aslo responsive that they can be updated to columns each separately or maybe they shrink?
 My Browser output screnshot filename: ![flex-screenshot](image.png)
