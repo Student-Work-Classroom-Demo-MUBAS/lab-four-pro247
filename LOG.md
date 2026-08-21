@@ -36,3 +36,7 @@ position: absolute positions relative to the nearest ancestor with position set 
 
 Fix 
 Set position: relative on .plan.featured to establish it as the positioning context, then position: absolute; top: -12px; right: -12px; on .badge.
+
+The concept i found the hardest to understand was: using the Devtools to navigate through the differnt screens sizes
+One question I still have : Can you adjust the transperacy for the objects background in css?
+My Browser output screnshot filename: ![flex-screenshot](image.png)
